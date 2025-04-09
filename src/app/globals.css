@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 33% 10%;
+    --foreground: 210 40% 98%;
+    --card: 220 33% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 220 33% 15%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 25% 25%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 215 25% 18%;
+    --muted-foreground: 240 5% 65%;
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+    --border: 215 25% 20%;
+    --input: 215 25% 18%;
+    --ring: 210 100% 50%;
+    --radius: 0.5rem;
+  }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 220 33% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 33% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 33% 10%;
+    --primary: 210 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 215 25% 90%;
+    --secondary-foreground: 220 33% 10%;
+    --muted: 215 25% 90%;
+    --muted-foreground: 220 33% 40%;
+    --accent: 210 100% 50%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 0%;
+    --border: 215 25% 80%;
+    --input: 215 25% 90%;
+    --ring: 210 100% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-medium;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 transition-colors duration-300 text-white font-medium py-2.5 px-5 rounded-lg;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary hover:bg-secondary/90 transition-colors duration-300 text-white font-medium py-2.5 px-5 rounded-lg;
+  }
+
+  .btn-outline {
+    @apply bg-transparent border border-white/20 hover:border-white/50 transition-colors duration-300 text-white/80 hover:text-white font-medium py-2.5 px-5 rounded-lg;
+  }
+
+  .btn-success {
+    @apply bg-success hover:bg-success/90 transition-colors duration-300 text-white font-medium py-2.5 px-5 rounded-lg;
+  }
+
+  .btn-warning {
+    @apply bg-warning hover:bg-warning/90 transition-colors duration-300 text-warning-foreground font-medium py-2.5 px-5 rounded-lg;
+  }
+
+  .btn-destructive {
+    @apply bg-destructive hover:bg-destructive/90 transition-colors duration-300 text-white font-medium py-2.5 px-5 rounded-lg;
+  }
+
+  .nav-item {
+    @apply text-white/70 hover:text-white transition-colors duration-300 px-3 py-2 text-sm font-medium;
+  }
+
+  .section-title {
+    @apply text-2xl sm:text-3xl md:text-4xl font-display font-medium text-white mb-4;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-white/70 max-w-3xl mx-auto mb-8;
+  }
+
+  .card {
+    @apply bg-card rounded-xl p-6 backdrop-blur-md border border-white/10 shadow-lg;
+  }
+
+  .risk-high {
+    @apply bg-destructive/20 text-destructive border-l-4 border-destructive;
+  }
+
+  .risk-medium {
+    @apply bg-warning/20 text-warning border-l-4 border-warning;
+  }
+
+  .risk-low {
+    @apply bg-success/20 text-success border-l-4 border-success;
+  }
+
+  .dashboard-stats {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-8;
+  }
+
+  .stat-card {
+    @apply card flex flex-col;
+  }
+
+  .stat-value {
+    @apply text-3xl font-medium text-white mt-2;
+  }
+
+  .stat-label {
+    @apply text-sm text-white/60;
+  }
+
+  .stat-change {
+    @apply text-xs mt-2;
+  }
+
+  .stat-change.positive {
+    @apply text-success;
+  }
+
+  .stat-change.negative {
+    @apply text-destructive;
+  }
+}
