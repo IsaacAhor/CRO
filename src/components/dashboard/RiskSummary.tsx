@@ -13,6 +13,16 @@ export default function RiskSummary() {
       ]
     },
     {
+      id: "market",
+      name: "Market Risks",
+      risks: [
+        { id: "m1", name: "Customer Churn Signals", severity: "medium", probability: "high", impact: "medium" },
+        { id: "m2", name: "Bad Reviews", severity: "high", probability: "medium", impact: "high" },
+        { id: "m3", name: "Pricing Mismatch", severity: "medium", probability: "high", impact: "high" },
+        { id: "m4", name: "Market Conditions", severity: "high", probability: "medium", impact: "high" },
+      ]
+    },
+    {
       id: "operational",
       name: "Operational Risks",
       risks: [
@@ -24,25 +34,17 @@ export default function RiskSummary() {
     },
     {
       id: "compliance",
-      name: "Compliance Risks",
+      name: "Legal & Compliance Risks",
       risks: [
         { id: "c1", name: "Regulatory Non-Compliance", severity: "high", probability: "low", impact: "high" },
         { id: "c2", name: "Data Protection Issues", severity: "high", probability: "medium", impact: "high" },
         { id: "c3", name: "Audit Failures", severity: "medium", probability: "low", impact: "medium" },
-      ]
-    },
-    {
-      id: "strategic",
-      name: "Strategic Risks",
-      risks: [
-        { id: "s1", name: "Competitor Actions", severity: "medium", probability: "high", impact: "medium" },
-        { id: "s2", name: "Market Changes", severity: "high", probability: "medium", impact: "high" },
-        { id: "s3", name: "Technology Changes", severity: "medium", probability: "high", impact: "high" },
+        { id: "c4", name: "HR Flags", severity: "medium", probability: "medium", impact: "medium" },
       ]
     }
   ];
 
-  const getSeverityClass = (severity) => {
+  const getSeverityClass = (severity: string) => {
     switch (severity) {
       case "high":
         return "risk-high";

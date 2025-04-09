@@ -17,10 +17,10 @@ export default function Home() {
                 <div className="bg-primary rounded-full px-3 py-1 mr-2">NEW</div>
                 <span className="pr-2">AI Risk Management</span>
               </div>
-              <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-medium text-white mb-6">
-                Your <span className="text-primary">AI Chief Risk Officer</span>
-                <br />For Small Businesses
-              </h1>
+<h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-medium text-white mb-6">
+  Fortune 500 <span className="text-primary">Chief Risk Officer</span>
+  <br />On SMB Budget
+</h1>
               <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto mb-12">
                 GhostCRO uses AI to identify, monitor, and manage business risks. Get enterprise-level
                 risk management without the enterprise cost.
