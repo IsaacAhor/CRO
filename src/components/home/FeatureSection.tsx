@@ -10,22 +10,22 @@ export default function FeatureSection() {
           <div className="card flex flex-col h-full">
             <div className="text-xs uppercase tracking-wider text-white/50 mb-4">AI-powered</div>
             <h3 className="text-2xl md:text-3xl font-display font-medium text-white mb-4">
-              Build with Gemini in Firebase
+              Build with Gemini and GhostCRO
             </h3>
             <p className="text-white/70 flex-grow mb-6">
-              Work quickly and efficiently with Gemini in Firebase. Complete a variety of tasks like coding,
+              Work quickly and efficiently with Gemini and GhostCRO. Complete a variety of tasks like coding,
               debugging, testing, refactoring, explaining, and documenting code with AI assistance that interacts
-              with your codebase and takes actions on your behalf. Use the built-in model or select your preferred model.
+              with your codebase and deploys risk insights directly into your workflow.
             </p>
             <p className="text-white/70 mb-6">
               New Gemini Code Assist agents help with everything from migration to AI testing.
-              <Link href="https://developers.google.com/profile/badges/community/sdlcagents/gca-agents" className="text-firebase-orange hover:underline ml-1">
+              <Link href="https://developers.google.com/profile/badges/community/sdlcagents/gca-agents" className="text-yellow-400 hover:underline ml-1">
                 Sign up
               </Link> for the waitlist to get early access to Code Assist agents via the Google Developer Program.
             </p>
             <div>
               <Link
-                href="https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fstudio.firebase.google.com%2F"
+                href="#"
                 className="btn-outline"
               >
                 Get Started
@@ -46,7 +46,7 @@ export default function FeatureSection() {
             </p>
             <div className="mt-auto">
               <Link
-                href="https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fstudio.firebase.google.com%2F"
+                href="#"
                 className="btn-outline"
               >
                 Get Started

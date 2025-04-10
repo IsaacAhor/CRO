@@ -21,10 +21,10 @@ export default function QuickStartSection() {
             Go from opening your browser to building in minutes, not hours. Import your existing repositories from GitHub, GitLab, Bitbucket, or your local machine, with support for most tech stacks. Or use the App Prototyping agent to quickly create a new application using natural language, mockups, drawing tools, and screenshots, or select from a large catalog of popular framework or language templates. You can also customize your environment with Nix.
           </p>
           <p className="text-sm text-white/60 max-w-3xl mx-auto mb-8">
-            Firebase Studio is currently available with 3 workspaces at no cost during preview. Members of the Google Developer Program get up to 30 workspaces.
+            GhostCRO is currently available in preview with unlimited risk scans for early adopters. Help us shape the future of AI-driven risk mastery.
           </p>
           <Link
-            href="https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fstudio.firebase.google.com%2F"
+            href="#"
             className="btn-primary"
           >
             Get Started

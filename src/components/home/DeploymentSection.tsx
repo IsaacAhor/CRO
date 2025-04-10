@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function DeploymentSection() {
   return (
     <section className="py-24 md:py-32 relative">
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-firebase opacity-50 z-0"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-purple-500 to-indigo-500 opacity-50 z-0"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="text-center mb-12">
@@ -13,25 +13,24 @@ export default function DeploymentSection() {
           </div>
           <h2 className="section-title">Develop faster, deliver with confidence</h2>
           <p className="section-subtitle">
-            Publish your apps to Firebase App Hosting with a few clicks, and monitor the usage and behavior at a glance.
-            You can also deploy your production apps to Firebase Hosting, Cloud Run, or your own custom infrastructure
-            with complete control of your deployment approach.
+            Deploy AI-powered risk solutions seamlessly and monitor their impact in real time.
+            Integrate with your existing tools or custom infrastructure, with full control over your deployment strategy.
           </p>
         </div>
 
         <div className="flex justify-center">
           <Link
-            href="https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fstudio.firebase.google.com%2F"
+            href="#"
             className="btn-primary"
           >
-            Try Firebase Studio
+            Try GhostCRO
           </Link>
         </div>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* API Monitoring Illustration */}
           <div className="card flex justify-center items-center p-8">
-            <div className="w-16 h-16 bg-firebase-blue rounded-full flex items-center justify-center mb-4">
+            <div className="w-16 h-16 bg-[#4B0082] rounded-full flex items-center justify-center mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-white">
                 <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>

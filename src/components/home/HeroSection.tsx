@@ -3,54 +3,29 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <section className="pt-24 pb-20 md:py-32 text-center">
-      <div className="container mx-auto px-4 md:px-6">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-medium text-white mb-6">
-          The full
-          <Image
-            src="/images/firebase-logo.svg"
-            alt="Firebase"
-            width={48}
-            height={48}
-            className="inline-block mx-2 w-12 h-12"
-          />
-          stack <br />
-          AI workspace
-        </h1>
-        <p className="text-lg md:text-xl text-white/70 max-w-3xl mx-auto mb-12">
-          Firebase Studio accelerates your entire development lifecycle with AI agents.
-          Build backends, front ends, and mobile apps, all in one place.
-        </p>
-        <Link
-          href="https://accounts.google.com/AccountChooser/signinchooser?continue=https%3A%2F%2Fstudio.firebase.google.com%2F"
-          className="btn-primary text-lg px-8 py-3"
-        >
-          Try Firebase Studio
-        </Link>
-
-        <div className="mt-16 relative">
-          <div className="max-w-5xl mx-auto">
-            <div className="bg-black/40 rounded-xl overflow-hidden border border-white/10">
-              <Image
-                src="https://ext.same-assets.com/2510403415/3053245229.png"
-                alt="Firebase Studio IDE"
-                width={1200}
-                height={600}
-                className="w-full h-auto"
-              />
-            </div>
-
-            <div className="absolute -bottom-20 -right-8 md:right-0 lg:right-20 w-1/3 max-w-[200px]">
-              <div className="bg-[#FFE0A3] p-1 rounded-xl rotate-6 border-4 border-black/40">
-                <Image
-                  src="https://ext.same-assets.com/2510403415/3675667301.png"
-                  alt="Firebase Studio mobile preview"
-                  width={400}
-                  height={800}
-                  className="w-full h-auto rounded-lg"
-                />
-              </div>
-            </div>
+    <section className="py-20 md:py-32 text-center bg-gradient-to-b from-black to-gray-900">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl shadow-xl p-6 sm:p-8 md:p-12">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+            The AI-Powered <br /> Risk Command Center
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8 md:mb-10">
+            One place to uncover hidden risks, deploy instant solutions, and transform chaos into clarity. <br />
+            <span className="font-semibold">Train your invisible Chief Risk Officer with every click.</span>
+          </p>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Link
+              href="#"
+              className="px-6 py-3 rounded-lg bg-white/10 hover:bg-white/20 text-white font-semibold shadow-md transition"
+            >
+              Get GhostCRO Free
+            </Link>
+            <Link
+              href="#"
+              className="px-6 py-3 rounded-lg border border-white/20 hover:bg-white/10 text-white font-semibold transition"
+            >
+              Log In
+            </Link>
           </div>
         </div>
       </div>
